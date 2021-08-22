@@ -6,12 +6,14 @@ def valid_number():
     number = str(input())
     check_num = re.search(r'(\+7\s[\(]\d\d\d[\)]\s\d\d\d\s\d\d[-]\d\d)', number)
     if check_num is None:
-        print(False, number)
+        print(False)
     else:
-        print(True, number)
+        print(True)
 
 
 valid_number()
+
+
 
 #
 # valid number pattern
